@@ -13,7 +13,6 @@ body {
     flex-direction: row;
     margin-top: 0px;
     /* margin-bottom: 10px; */
-
 }
 
 /* #zClicks {
@@ -25,6 +24,7 @@ body {
 #timer {
     margin: 10px;
     font-size: 20px;
+    
 }
 
 #cps {
@@ -32,6 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     /* margin-top: 20px; */
     /* padding: 20px; */
     /* padding: 20px; */
