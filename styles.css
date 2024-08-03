@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#counters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0px;
+    /* margin-bottom: 10px; */
+
+}
+
+/* #zClicks {
+    color : red;
+} */
+
+#zCounter,
+#xCounter,
+#timer {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#cps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 20px; */
+    /* padding: 20px; */
+    /* padding: 20px; */
+}
+/* #metrics {
+    margin: 10px;
+} */
+
+
+/* #reset {
+    margin: 10px;
+
+} */
