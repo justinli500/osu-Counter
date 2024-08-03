@@ -34,6 +34,9 @@ function resetTimer() {
   xCounter = 0;
   document.getElementById("zCounter").innerHTML = `<b>z count:</b> ${zCounter}`;
   document.getElementById("xCounter").innerHTML = `<b>x count:</b> ${xCounter}`;
+  document.getElementById(
+    "timer"
+  ).innerHTML = `<b>Time left:</b> ${desiredTime}`;
   // TODO: Also reset zCounter and xCounter
 }
 
@@ -54,10 +57,10 @@ function startCountdown(givenTime) {
       document.getElementById("cps").innerHTML = `<b>Clicks per second:</b> ${
         (zCounter + xCounter) / desiredTime
       }`;
+
       // * Change timer because timer doesn't end up at 0 naturally
       document.getElementById("timer").innerHTML = `<b>Time left:</b> ${0}`;
       clearInterval(myInterval);
-
       return;
     }
 
@@ -76,6 +79,11 @@ function startCountdown(givenTime) {
     document.getElementById(
       "xCounter"
     ).innerHTML = `<b>x count:</b> ${xCounter}`;
+
+    // * Display CPS live ?
+    document.getElementById("cps").innerHTML = `<b>Clicks per second:</b> ${
+      Math.round(((zCounter + xCounter) / (desiredTime - timeLeft)) * 100) / 100
+    }`;
   }, 100);
 }
 
