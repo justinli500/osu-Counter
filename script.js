@@ -23,6 +23,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.getElementById("reset").addEventListener("click", resetTimer);
+document.getElementById("reset-osu").addEventListener("click", resetTimer);
 
 function resetTimer() {
   document.getElementById(
