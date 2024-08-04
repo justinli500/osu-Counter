@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     /* margin-bottom: 10px; */
 }
 
@@ -22,24 +22,37 @@ body {
 #zCounter,
 #xCounter,
 #timer {
-    margin: 10px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    /* margin-bottom: 5px; */
+    /* font-size: 20px; */
+
+    /* flex-basis: 50%; */
     
 }
 
 #cps {
-    display: flex;
+    /* - Not using flexbox  here made the text all end up on the same line */
+    /* display: flex; */
+    margin: 7px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    white-space: nowrap;
+
+    /* flex-wrap: nowrap; */
+    /* flex-basis: 0%; */    
     /* margin-top: 20px; */
     /* padding: 20px; */
     /* padding: 20px; */
 }
-/* #metrics {
-    margin: 10px;
-} */
+
+#metrics { 
+    /* margin: 10px; */
+    font-size: 18px;
+
+}
 
 
 /* #reset {
