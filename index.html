@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Welcome to osu!Counter!</h1>
-    <div id="intro">
+    <div id="intro" class="text">
       <p>
         You can measure how fast you can stream or tap in a given time window
         using osu!Counter.
@@ -23,14 +23,13 @@
         button!
       </p>
     </div>
-    <div id="metrics">
+    <div id="metrics" class="text">
       <p id="timer"><b>Time left:</b> 10</p>
       <div id="counters">
         <p id="zCounter"><b>z count:</b> 0</p>
         <p id="xCounter"><b>x count:</b> 0</p>
       </div>
-
-      <p id="cps"><b>Clicks per second:</b> 0</p>
+      <p id="cps" class="text"><b>Clicks per second:</b> 0</p>
     </div>
     <form>
       <!-- <input type = "button"> -->
@@ -39,6 +38,7 @@
       <!--- ../ didn't work, but ./ did -->
     </form>
 
+    <!-- * osu! image/button -->
     <form>
       <input id="reset" type="button" value="Reset timer" />
     </form>

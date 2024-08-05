@@ -25,6 +25,23 @@ document.addEventListener("keydown", (event) => {
 document.getElementById("reset").addEventListener("click", resetTimer);
 document.getElementById("reset-osu").addEventListener("click", resetTimer);
 
+document
+  .getElementById("reset-osu")
+  .addEventListener("mouseover", enableHoverAnimation);
+document
+  .getElementById("reset-osu")
+  .addEventListener("mouseleave", disableHoverAnimation);
+
+// * Defining functions below
+
+function enableHoverAnimation() {
+  document.getElementById("reset-osu").style.animation = "pulse 500ms infinite";
+}
+
+function disableHoverAnimation() {
+  document.getElementById("reset-osu").style.animation = "";
+}
+
 function resetTimer() {
   document.getElementById(
     "timer"
