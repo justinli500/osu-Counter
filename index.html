@@ -31,14 +31,18 @@
       </div>
       <p id="cps" class="text"><b>Clicks per second:</b> 0</p>
     </div>
-    <form>
-      <!-- <input type = "button"> -->
-      <input type = "image" id = "reset-osu" src="./images/osu_logo.svg.png" /
-      width = "200" height = "200" alt = "Reset timer">
-      <!--- ../ didn't work, but ./ did -->
-    </form>
+    <div class="overlap-container">
+      <form>
+        <!-- * osu! image/button -->
+        <input type = "image" id = "reset-osu" src="./images/osu_logo.svg.png" /
+        width = "200" height = "200" alt = "Reset timer">
+        <!--- ../ didn't work, but ./ did on GitHub pages-->
+      </form>
+      <span id="circle"></span>
+      <span id="circle1"></span>
+      <span id="circle2"></span>
+    </div>
 
-    <!-- * osu! image/button -->
     <form>
       <input id="reset" type="button" value="Reset timer" />
     </form>

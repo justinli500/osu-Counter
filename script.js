@@ -25,21 +25,55 @@ document.addEventListener("keydown", (event) => {
 document.getElementById("reset").addEventListener("click", resetTimer);
 document.getElementById("reset-osu").addEventListener("click", resetTimer);
 
+// * Passing a function with a parameter into another function
+document.getElementById("reset-osu").addEventListener("mouseover", () => {
+  let timeout = setTimeout(() => {
+    enablePulseOut(500, "circle"); // - This can also be 1000
+  }, 195);
+});
+
+// - Do a fade and stacking effect here
+// document.getElementById("reset-osu").addEventListener("mouseover", () => {
+//   let timeout = setTimeout(() => {
+//     enablePulseOut(1000, "circle1");
+//   }, 695);
+// });
+
+// document.getElementById("reset-osu").addEventListener("mouseover", () => {
+//   let timeout = setTimeout(() => {
+//     enablePulseOut(1000, "circle2");
+//   }, 1195);
+// });
+// document.getElementById("reset-osu").addEventListener("mouseover", () => {
+//   let timeout = setTimeout(() => {
+//     enablePulseOut(1000);
+//   }, 195);
+// document.getElementById("reset-osu");
+// .addEventListener("mouseleave", clearInterval(timeout));
+// - Fix the delay duration
+// enablePulseOut(500);
+// });
+// * Turning off the animation
 document
   .getElementById("reset-osu")
-  .addEventListener("mouseover", enableHoverAnimation);
-document
-  .getElementById("reset-osu")
-  .addEventListener("mouseleave", disableHoverAnimation);
+  .addEventListener("mouseleave", disablePulseOut);
 
 // * Defining functions below
 
-function enableHoverAnimation() {
-  document.getElementById("reset-osu").style.animation = "pulse 500ms infinite";
+function enablePulseOut(animationDuration, id) {
+  if (!animationDuration) {
+    animationDuration = 500;
+  }
+  document.getElementById(
+    id
+  ).style.animation = `pulse-out ${animationDuration}ms infinite`;
 }
 
-function disableHoverAnimation() {
-  document.getElementById("reset-osu").style.animation = "";
+function disablePulseOut() {
+  document.getElementById("circle").style.animation = "";
+  setTimeout(function () {
+    document.getElementById("circle").style.animation = "";
+  }, 196);
 }
 
 function resetTimer() {
