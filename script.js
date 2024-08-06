@@ -26,11 +26,11 @@ document.getElementById("reset").addEventListener("click", resetTimer);
 document.getElementById("reset-osu").addEventListener("click", resetTimer);
 
 // * Passing a function with a parameter into another function
-document.getElementById("reset-osu").addEventListener("mouseover", () => {
-  let timeout = setTimeout(() => {
-    enablePulseOut(500, "circle"); // - This can also be 1000
-  }, 195);
-});
+// document.getElementById("reset-osu").addEventListener("mouseover", () => {
+//   let timeout = setTimeout(() => {
+//     enablePulseOut(500, "circle"); // - This can also be 1000
+//   }, 195);
+// });
 
 // - Do a fade and stacking effect here
 // document.getElementById("reset-osu").addEventListener("mouseover", () => {
@@ -54,9 +54,9 @@ document.getElementById("reset-osu").addEventListener("mouseover", () => {
 // enablePulseOut(500);
 // });
 // * Turning off the animation
-document
-  .getElementById("reset-osu")
-  .addEventListener("mouseleave", disablePulseOut);
+// document
+//   .getElementById("reset-osu")
+//   .addEventListener("mouseleave", disablePulseOut);
 
 // * Defining functions below
 
